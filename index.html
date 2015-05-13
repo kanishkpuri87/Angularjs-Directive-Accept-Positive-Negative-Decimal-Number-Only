@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="jquery@*" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link data-require="bootstrap@3.3.2" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+  <script data-require="bootstrap@3.3.2" data-semver="3.3.2" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div data-ng-app="testapp">
+
+    <form class="col-md-6">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Positive Number</label>
+        <input class="form-control" valid-number ng-model="positiveNumber" placeholder="" allow-decimal="false" allow-negative="false" type="text">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Negative Number</label>
+        <input class="form-control" valid-number ng-model="negativeNumber" placeholder="" allow-decimal="false" allow-negative="true" type="text">
+      </div>  <div class="form-group">
+        <label for="exampleInputEmail1">Positive Decimal Numbers Default Decimal-Upto 2</label>
+        <input class="form-control" valid-number ng-model="decimal" placeholder="" allow-decimal="true" allow-negative="false" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Positive Decimal Numbers  Decimal-Upto 3</label>
+        <input class="form-control" valid-number ng-model="decimalUpto" placeholder="" allow-decimal="true" allow-negative="false" decimal-upto="3" type="text">
+      </div>
+ <div class="form-group">
+        <label for="exampleInputEmail1">Negative Decimal Numbers Default Decimal-Upto 2</label>
+        <input class="form-control" valid-number ng-model="negativdecimal" placeholder="" allow-decimal="true" allow-negative="true"  type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Negative Decimal Numbers  Decimal-Upto 3</label>
+        <input class="form-control" valid-number ng-model="negativdecimalUpto" placeholder="" allow-decimal="true" allow-negative="true" decimal-upto="3" type="text">
+      </div>
+
+    
+
+
+    </form>
+
+  </div>
+</body>
+
+</html>
